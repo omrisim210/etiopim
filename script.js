@@ -60,8 +60,8 @@ function updateTimer() {
   let diff = bd - now
 
   let d = Math.floor(diff / (1000 * 60 * 60 * 24))
-  let m = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-  let h = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
+  let h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+  let m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
   let s = Math.floor((diff % (1000 * 60)) / 1000)
 
   $('timer').innerHTML = `${d} ימים, ${h} שעות, ${m} דקות, ${s} שניות`
